@@ -19,6 +19,11 @@
                 document.getElementById('output').innerHTML = fahrenheit;
             }
         }
+
+        function reset() {
+           document.getElementById("celsius").value = "";
+           document.getElementById('output').innerHTML = "";
+        }
     </script>
 
 <nav class="navbar bg-light">
@@ -40,6 +45,7 @@
   <input type="number" id="celsius" name="celsius"/>
 
   <button type="button" onclick="celsiusToFahrenheight()">Convert</button>
+  <button type="button" onclick="reset()">Reset</button>
   
   <h2 id="output"></h2>
 
